@@ -1,0 +1,7 @@
+﻿  main.cpp
+  roster.cpp
+  student.cpp
+C:\Users\Jorge\source\repos\StudentRoster\StudentRoster\main.cpp(18,72): error C2143: syntax error: missing ';' before '}'
+C:\Users\Jorge\source\repos\StudentRoster\StudentRoster\student.cpp(23,75): error C2143: syntax error: missing ';' before '}'
+  Generating Code...
+C:\Users\Jorge\source\repos\StudentRoster\StudentRoster\student.cpp(43,75): error C2143: syntax error: missing ';' before '}'
