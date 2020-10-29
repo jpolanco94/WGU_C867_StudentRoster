@@ -31,7 +31,10 @@ int main() {
 	cout << endl;
 
 	cout << "Average days in course for students:  " << endl;
-	roster.printAverageDaysInCourse();
+	for (int i = 0; i < NUM_STUDENTS; i++) {
+		roster.printAverageDaysInCourse(roster.classRosterArray[i]->getstudentID());
+	}
+	cout << endl;
 
 	cout << "Removing student A3 from roster..." << endl;
 	roster.remove("A3");

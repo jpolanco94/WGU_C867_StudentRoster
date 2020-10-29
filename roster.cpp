@@ -36,10 +36,12 @@ void Roster::parse(string studentData) {
 
 	lhs = rhs + 1;
 	rhs = studentData.find(",", lhs);
+	cout << rhs << endl;
 	int daysInCourse3 = stoi(studentData.substr(lhs, rhs - lhs));
 
 	lhs = rhs + 1;
 	rhs = studentData.find(",", lhs);
+	cout << rhs << endl;
 	string degreeProgramString = studentData.substr(lhs, rhs - lhs);
 
 
@@ -62,7 +64,6 @@ void Roster::add(string studentID,
 	DegreeProgram degreeProgram) {
 
 	int daysInCourseArray[] = { daysInCourse1, daysInCourse2, daysInCourse3 };
-	cout << email << ":" << endl;
 	classRosterArray[++lastIndex] = new Student(studentID, firstName, lastName, email, age, daysInCourseArray, degreeProgram);
 }
 
@@ -104,12 +105,13 @@ void Roster::printInvalidsEmails() {
 	if (!hasInvalidEmail) { cout << "No Invalid Emails" << endl; }
 }
 
-void Roster::printAverageDaysInCourse() { 
+void Roster::printAverageDaysInCourse(string studentID) {
 
 	for (int i = 0; i <= Roster::lastIndex; i++) {
-		cout << classRosterArray[i]->getstudentID() << ": " << classRosterArray[i]->averageDaysInCourse() << endl;
+		if (classRosterArray[i]->getstudentID() == studentID) {
+			cout << classRosterArray[i]->getstudentID() << ":" << classRosterArray[i]->averageDaysInCourse() << endl;
+		}
 	}
-	cout << endl;
 }
 
 void Roster::remove(string studentID) {

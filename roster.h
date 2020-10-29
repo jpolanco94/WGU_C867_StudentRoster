@@ -3,7 +3,7 @@
 
 class Roster {
 
-private:
+public:
 	int lastIndex = -1;
 	const static int NUM_STUDENTS = 5;
 	Student* classRosterArray[NUM_STUDENTS];
@@ -22,7 +22,7 @@ public:
 		DegreeProgram degreeProgram);
 	void remove(string studentID);
 	void printAll();
-	void printAverageDaysInCourse();
+	void printAverageDaysInCourse(string studentID);
 	void printInvalidsEmails();
 	void printByDegreeProgram(DegreeProgram degreeProgram);
 	~Roster();
