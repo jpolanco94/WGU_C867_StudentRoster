@@ -30,7 +30,7 @@ I pass that enum value into the string array in order to get a string value
 <p>In a real world application, I would have added another enum value that represents null or empty. This is better than having a null value for a student's degree type.</p>
 
 ## student.h and roster.h
-<p?Both these files contain the function and variable declarations of the student and roster class</p>
+<p>Both these files contain the function and variable declarations of the student and roster class</p>
 
 ## student.cpp
 <p>This file contains the definitions of all the getters and setters of the student class. It also contains three functions that were not required for the assessment
