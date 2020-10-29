@@ -45,5 +45,7 @@ int main() {
 	roster.remove("A3");
 	roster.printAll();
 
+	cout << endl;
+
 	return 0;
 }
