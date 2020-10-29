@@ -28,3 +28,15 @@ I pass that enum value into the string array in order to get a string value
 </p>
 
 <p>In a real world application, I would have added another enum value that represents null or empty. This is better than having a null value for a student's degree type.</p>
+
+## student.h and roster.h
+<p?Both these files contain the function and variable declarations of the student and roster class</p>
+
+## student.cpp
+<p>This file contains the definitions of all the getters and setters of the student class. It also contains three functions that were not required for the assessment
+The first is a static void printTableColumnHeaders that simply prints column headers. It is static so that it can be used without initiliazing a student object and it is void
+becuase it does not return anything. The bool hasInvalidEmail will tell you if the student has an invalid email and the double averageDaysInCourse returns the average of the three days in course numbers. These functions are used insisde of the roster.cpp's printInvalidEmails and printAverageDaysInCourse functions respectively</p>
+
+## roster.cpp
+<p>The parse function uses the find and substr methods of the string class to better extract the information for each student from a comma seperated string
+First, the find method is used to find the position of the first comma in the string and is assigned to rhs (right hand sign). Then we can use substr to find the student's ID to using 0 (the start of the csv) to rhs (the first comma). Then we create a lhs (left hand side) variable that hold the position of the comma on the left side while we continue to use substr. For the student's first name we want </p>
