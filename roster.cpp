@@ -36,12 +36,10 @@ void Roster::parse(string studentData) {
 
 	lhs = rhs + 1;
 	rhs = studentData.find(",", lhs);
-	cout << rhs << endl;
 	int daysInCourse3 = stoi(studentData.substr(lhs, rhs - lhs));
 
 	lhs = rhs + 1;
 	rhs = studentData.find(",", lhs);
-	cout << rhs << endl;
 	string degreeProgramString = studentData.substr(lhs, rhs - lhs);
 
 
