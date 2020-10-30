@@ -4,6 +4,11 @@ using namespace std;
 
 int main() {
 
+	cout << "Class: Scripting and Programming - Applications - C867" << endl;
+	cout << "Langauge Used: C++" << endl;
+	cout << "Student ID: #001474242" << endl;
+	cout << "Student Name: Jorge Polanco" << endl << endl;
+
 	const string studentData[] = {
 		"A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY",
 		"A2,Suzan,Erickson,Erickson_1990@gmail.com,19,50,30,40,NETWORK",
